@@ -1,0 +1,26 @@
+- content_for :photo do
+  = image_tag 'marysia_co.jpg'
+
+%h1.center Gdzie i kiedy
+
+%p.alert
+  Po wejściu na przełęcz należy udać się w stronę ruin bacówki widocznych na południowy wschód od Czarnej Turni... A, nie, zaraz, nie ta wycieczka...
+
+%p.bold  Kiedy?
+%p
+  15 czerwca 2013r, od godz. 14:00
+
+%p.bold  Gdzie?
+%p
+  Na działce u moich Dziadków!
+%p
+  = link_to "Wylatkowo 51, pow. Słupecki, woj. Wielkopolskie :)", 'https://maps.google.pl/maps/ms?msid=213452247815689055104.0004ddda1bc8b0d5e3f1d&msa=0&ll=52.46375,17.925825&spn=0.034723,0.066776'
+%p
+  (To nie tam, gdzie lądowali kosmici, ale niedaleko!)
+%p
+  52° 27' 56.38" N, 17° 55' 34.15" E
+
+%p
+  W razie zgubienia szlaku dzwońcie do Taty!
+
+= render 'kontakt'

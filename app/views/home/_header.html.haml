@@ -1,0 +1,11 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      = link_to "Roczek Marysi", start_path, class: 'brand'
+      .pull-right
+        %ul.nav
+          = smart_link_to "Start", 'start_path'
+          = smart_link_to "Co", 'co_path'
+          = smart_link_to "Gdzie", 'gdzie_path'
+          = smart_link_to "Lista Gości", 'goscie_path'
+          = smart_link_to "Jajecznica", 'jajecznica_path'

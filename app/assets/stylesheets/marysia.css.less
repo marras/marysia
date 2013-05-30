@@ -1,0 +1,107 @@
+@import 'twitter/bootstrap/variables';
+@import 'less_mixins';
+
+@top-height: 150px;
+
+body {
+  background: rgb(155, 168, 78) asset-url('background.jpg') repeat fixed center;
+  background-size: contain;
+}
+
+
+#main {
+  width: 900px;
+  background: #FFF;
+  padding: 20px;
+  .rounded-corners(20px);
+  .box-shadow(1px 1px 8px, 70%);
+  position: relative;
+  top: @top-height;
+  margin: auto;
+  overflow-y: hidden;
+
+  .content {
+    float: left;
+    clear: none;
+    width: 670px;
+
+    .txt(16px, 1.3);
+
+    .center {
+      text-align: center;
+    }
+
+    .alert {
+      background-color: #DDD;
+      color: #666;
+      border: 1px solid #AAA;
+      font-style: italic;
+    }
+
+    p.bold {
+      .txt(20px);
+      font-weight: 700;
+    }
+
+    font-family: Oxygen, sans-serif;
+
+    i {
+      font-family: FontAwesome !important;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+
+      &.center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    ul.harmonogram {
+      display: table;
+      border-spacing: 10px;
+      li {
+        display: table-row;
+        .hour {
+          display: table-cell;
+        }
+        .task {
+          display: table-cell;
+        }
+      }
+    }
+
+    table {
+        th {
+            text-align: left;
+        }
+
+        td {
+            width: 200px;
+            vertical-align: top;
+        }
+    }
+
+  }
+
+  .photo {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    float: left;
+    clear: none;
+    vertical-align: center;
+
+    img {
+      .box-shadow(1px 1px 8px, 70%);
+    }
+  }
+}
+
+.footer {
+    .txt(12px, 1.1);
+    border-top: 1px solid #CCC;
+    margin-top: 10px;
+    padding-top: 10px;
+}

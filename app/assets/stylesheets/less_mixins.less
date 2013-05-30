@@ -1,0 +1,33 @@
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  box-shadow:         @style @c;
+  -webkit-box-shadow: @style @c;
+  -moz-box-shadow:    @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+.rounded-corners(@size: 15px) {
+  border-radius: @size;
+  -moz-border-radius: @size;
+  -webkit-border-radius: @size;
+}
+
+.txt (@size, @multiplier: 1.1) {
+  font-size: @size;
+  line-height: @size*@multiplier;
+}
+
+.input_and_label_on_one_line() {
+  overflow: auto;
+
+  input {
+    margin-right: 10px;
+    float: left;
+    width: auto;
+  }
+
+  label {
+    float: left;
+  }
+}
