@@ -11,8 +11,13 @@
   .container
     = render 'home/header'
     .row
-      #main
-        .photo
-          = image_tag "#{params[:action]}.png", class: 'img-circle'
-        .content
-          = yield
+      #box
+        .link
+          = smart_left_link unless params[:action] == 'start'
+        #main
+          .photo
+            = image_tag "#{params[:action]}.png", class: 'img-circle'
+          .content
+            = yield
+        .link
+          = smart_right_link unless params[:action] == 'jajecznica'

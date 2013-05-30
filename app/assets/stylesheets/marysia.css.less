@@ -8,6 +8,36 @@ body {
   background-size: contain;
 }
 
+#box {
+    overflow: hidden;
+    width: 1100px;
+    position: relative;
+    top: @top-height;
+    margin: auto;
+}
+
+.link {
+    width: 50px;
+    height: 200px;
+    float: left;
+    clear: none;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 90px;
+
+    a {
+      text-decoration: none;
+      color: #CCC;
+      text-shadow: 2px 3px #000;
+
+      &:hover {
+          color: #EEE;
+      }
+      i {
+        .txt(60px);
+      }
+    }
+}
 
 #main {
   width: 900px;
@@ -15,10 +45,10 @@ body {
   padding: 20px;
   .rounded-corners(20px);
   .box-shadow(1px 1px 8px, 70%);
-  position: relative;
-  top: @top-height;
   margin: auto;
   overflow-y: hidden;
+  float: left;
+  clear: none;
 
   .content {
     float: left;
